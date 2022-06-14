@@ -159,5 +159,9 @@ variable "lambda_function" {
         vpc_config = optional(list(any))
         environment = optional(map(any))
         timeouts = optional(list(any))
+        tempdir = optional(string)
+        extra_py_files = optional(string)
+        extra_jars = optional(string)
+        spark-event-logs-path = optional(string)
     })
 }
