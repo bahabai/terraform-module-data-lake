@@ -56,6 +56,10 @@ variable "glue_job" {
     security_configuration = optional(string)
     default_arguments      = optional(map(string))
     schedule               = optional(list(string))
+    TempDir                = optional(string)
+    extra-py-files         = optional(string)
+    extra-jars             = optional(string)
+    spark-event-logs-path  = optional(string)
   })
 }
 
