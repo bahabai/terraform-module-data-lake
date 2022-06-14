@@ -7,6 +7,7 @@ resource "aws_s3_object" "glue_script_upload" {
   etag   = "${filemd5("${path.module}/../../../glue_job/job.py")}"
 }
 
+
 resource "aws_glue_job" "glue_job" {
   count = var.glue_job_enable ? 1 : 0
 
