@@ -37,6 +37,7 @@ resource "aws_glue_job" "glue_job" {
     "--enable-spark-ui"                  = "true"
     "--enable-glue-datacatalog"          = "true"  
     "--spark-event-logs-path"            = var.glue_job.spark-event-logs-path
+    "--job-bookmark-option"              = "job-bookmark-disable"   
   }
 
 
